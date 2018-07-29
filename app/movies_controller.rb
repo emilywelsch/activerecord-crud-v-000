@@ -64,8 +64,8 @@ def can_be_found_updated_and_saved
 end
 
 def can_update_using_update_method
-  movie = Movie.create(title: "Wat?")
-  movie.find_by(title: "Wat?")
+  Movie.create(title: "Wat?")
+  movie = Movie.find_by(title: "Wat?")
   movie.update(title: "Wat, huh?")
 end
 
